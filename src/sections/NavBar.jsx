@@ -1,20 +1,25 @@
 import styled from "styled-components";
-import ButtonPrimary from "../components/ButtonPrimary";
+import LogoNavBar from "../components/LogoNavBar";
+import NavBarItems from "../components/NavBarItems";
+import NavBarLogin from "../components/NavBarLogin";
 
 const NavBarStyle = styled.div`
   width: 100%;
-  height: 120px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
-  padding: 0 2rem;
+  padding: 1.5rem 2rem;
 `;
 
 const NavBar = () => {
   return (
     <NavBarStyle>
-      <ButtonPrimary text="BUILD YOUR WORLD" />
+      <LogoNavBar />
+      <NavBarItems />
+      <NavBarLogin />
     </NavBarStyle>
+    // continuar con header
   );
 };
 

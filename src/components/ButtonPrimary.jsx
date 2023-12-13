@@ -7,10 +7,11 @@ const ButtonPrimaryStyle = styled.button`
   border: none;
   outline: 2px solid transparent;
   border-radius: 40px;
-  padding: 1rem 2.6rem;
+  white-space: nowrap;
   height: min-content;
   font-weight: 700;
   font-size: 0.8rem;
+  padding: ${(props) => props.padding || "1rem 2.6rem"};
   cursor: pointer;
   &:hover {
     background: none;
@@ -19,11 +20,12 @@ const ButtonPrimaryStyle = styled.button`
   }
 `;
 
-const ButtonPrimary = ({ text }) => {
-  return <ButtonPrimaryStyle>{text}</ButtonPrimaryStyle>;
+const ButtonPrimary = ({ text, padding }) => {
+  return <ButtonPrimaryStyle padding={padding}>{text}</ButtonPrimaryStyle>;
 };
 ButtonPrimary.propTypes = {
   text: PropTypes.string.isRequired,
+  padding: PropTypes.string,
 };
 
 export default ButtonPrimary;
