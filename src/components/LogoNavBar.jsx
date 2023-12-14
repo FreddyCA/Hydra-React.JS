@@ -14,8 +14,8 @@ const LogoNavBarImgStyle = styled.img`
 const LogoNavBar = () => {
   return (
     <LogoNavBarStyle>
-      <LogoNavBarImgStyle src={logoHydra} alt="logo Hydra" height={"100px"} />
-      <LogoNavBarImgStyle src={logoHydraName} alt="logo Hydra" height={"50px"} />
+      <LogoNavBarImgStyle src={logoHydra} alt="logo Hydra" height={"90px"} />
+      <LogoNavBarImgStyle src={logoHydraName} alt="logo Hydra" height={"45px"} />
     </LogoNavBarStyle>
   );
 };

@@ -9,7 +9,7 @@ const NavBarLoginStyle = styled.div`
 
 const NavBarContact = styled.a`
   color: var(--color--textPrimary);
-  outline: 2px solid var(--color--textPrimary);
+  border: 2px solid var(--color--textPrimary);
   padding: 1rem 2.1rem;
   text-decoration: none;
   border-radius: 40px;

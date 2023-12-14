@@ -11,7 +11,7 @@ const NavBarItemStyle = styled.a`
   text-decoration: none;
   color: var(--color--textPrimary);
   white-space: nowrap;
-  font-size: 0.775rem;
+  font-size: 0.8rem;
   font-weight: 700;
 
   position: relative;
