@@ -10,7 +10,7 @@ const InfoCompletStyle = styled.div`
 
 const IntroducciónTitleContent = styled.div`
   margin-right: 2rem;
-  min-width: 350px;
+  min-width: 370px;
   display: flex;
   flex-direction: column;
   justify-content: end;
