@@ -28,17 +28,17 @@ const Process = () => {
       num: "01",
     },
     {
-      id: "concept1",
+      id: "concept2",
       title: "Diseño de interacción",
       num: "02",
     },
     {
-      id: "concept1",
+      id: "concept3",
       title: "Pruebas de usuario",
       num: "03",
     },
     {
-      id: "concept1",
+      id: "concept4",
       title: "Despliegue de Hydra VR",
       num: "04",
     },

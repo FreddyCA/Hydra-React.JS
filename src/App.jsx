@@ -1,4 +1,5 @@
 import About from "./sections/About";
+import Form from "./sections/Form";
 import Header from "./sections/Header";
 import NavBar from "./sections/NavBar";
 import Process from "./sections/Process";
@@ -16,6 +17,7 @@ const App = () => {
       <Services></Services>
       <Tech></Tech>
       <Process></Process>
+      <Form></Form>
     </>
   );
 };
