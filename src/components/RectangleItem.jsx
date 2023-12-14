@@ -8,7 +8,7 @@ const RectangleItemStyle = styled.div`
   height: 100%;
   width: 30%;
   ${(props) =>
-    props.index === 1 &&
+    props.$index === 1 &&
     css`
       border-left: 3px solid rgb(192, 183, 232, 0.5);
       border-right: 3px solid rgb(192, 183, 232, 0.5);
@@ -39,9 +39,8 @@ const RectangleItemText = styled.p`
 `;
 
 const RectangleItem = ({ title, text, src, index }) => {
-  console.log(index);
   return (
-    <RectangleItemStyle index={index}>
+    <RectangleItemStyle $index={index}>
       <RectangleItemImg src={src} alt={title} />
       <RectangleItemTextContent>
         <RectangleItemTitle>{title}</RectangleItemTitle>

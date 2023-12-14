@@ -12,7 +12,7 @@ const AboutStyle = styled.div`
 `;
 
 const AboutContentInfo = styled.div`
-  margin-top: 4rem;
+  margin-top: 5rem;
   display: flex;
   gap: 1rem;
   justify-content: space-between;
