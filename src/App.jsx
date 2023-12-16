@@ -1,4 +1,5 @@
 import About from "./sections/About";
+import Footer from "./sections/Footer";
 import Form from "./sections/Form";
 import Header from "./sections/Header";
 import NavBar from "./sections/NavBar";
@@ -18,6 +19,7 @@ const App = () => {
       <Tech></Tech>
       <Process></Process>
       <Form></Form>
+      <Footer></Footer>
     </>
   );
 };
