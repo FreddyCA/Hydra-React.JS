@@ -45,7 +45,7 @@ const Services = () => {
   ];
   return (
     <SectionContent>
-      <ServicesStyle>
+      <ServicesStyle id="services">
         <InfoComplet
           title="¿POR QUÉ CONSTRUIR?"
           subtitle="¿CON HIDRA?"

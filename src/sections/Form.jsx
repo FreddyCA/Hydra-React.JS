@@ -17,7 +17,7 @@ const FormStyle = styled.div`
 const Form = () => {
   return (
     <SectionContent>
-      <FormStyle>
+      <FormStyle id="contact">
         <Subtitle text="ÚNETE A HIDRA" />
         <SubtitleSec
           text="Construyamos Tu Experiencia De Realidad Virtual"

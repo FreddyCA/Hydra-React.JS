@@ -19,7 +19,6 @@ const NavBar = () => {
       <NavBarItems />
       <NavBarLogin />
     </NavBarStyle>
-    // continuar con header
   );
 };
 

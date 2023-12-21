@@ -24,7 +24,7 @@ const NavBarContact = styled.a`
 const NavBarLogin = () => {
   return (
     <NavBarLoginStyle>
-      <NavBarContact href="#">Contáctenos</NavBarContact>
+      <NavBarContact href="#contact">Contáctenos</NavBarContact>
       <ButtonPrimary text="Únete a Hydra" padding={"1rem 2.1rem"} />
     </NavBarLoginStyle>
   );

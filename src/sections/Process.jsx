@@ -45,7 +45,7 @@ const Process = () => {
   ];
   return (
     <SectionContent>
-      <ProcessStyle>
+      <ProcessStyle id="howTo">
         <InfoComplet
           title="¿CÓMO CONSTRUIMOS?"
           subtitle="¿CON HIDRA VR?"

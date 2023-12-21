@@ -33,7 +33,7 @@ const About = () => {
   };
   return (
     <SectionContent>
-      <AboutStyle>
+      <AboutStyle id="aboutUs">
         <InfoComplet
           title={data.title}
           subtitle={data.subtitle}

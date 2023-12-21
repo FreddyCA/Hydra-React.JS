@@ -44,10 +44,10 @@ const NavBarItemStyle = styled.a`
 const NavBarItems = () => {
   return (
     <NavBarItemsContentStyle>
-      <NavBarItemStyle href="#">Acerca de Nosotros</NavBarItemStyle>
-      <NavBarItemStyle href="#">Servicios</NavBarItemStyle>
-      <NavBarItemStyle href="#">Tecnologías</NavBarItemStyle>
-      <NavBarItemStyle href="#">Cómo</NavBarItemStyle>
+      <NavBarItemStyle href="#aboutUs">Acerca de Nosotros</NavBarItemStyle>
+      <NavBarItemStyle href="#services">Servicios</NavBarItemStyle>
+      <NavBarItemStyle href="#technologies">Tecnologías</NavBarItemStyle>
+      <NavBarItemStyle href="#howTo">Cómo</NavBarItemStyle>
     </NavBarItemsContentStyle>
   );
 };

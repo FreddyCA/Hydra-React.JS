@@ -27,7 +27,7 @@ const Tech = () => {
   ];
   return (
     <SectionContent>
-      <TechStyle>
+      <TechStyle id="technologies">
         <TechBanner />
         <TechItemsContent>
           {data.map((item) => (
