@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 const ServiceItemStyle = styled.div`
   width: 200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,6 +12,9 @@ const ServiceItemStyle = styled.div`
   gap: 1.5rem;
   background: radial-gradient(circle, #433d60, #211e2e);
   border-radius: 40px;
+  @media screen and (max-width: 750px) {
+    width: 100%;
+  }
 `;
 
 const ServiceItemImg = styled.img`

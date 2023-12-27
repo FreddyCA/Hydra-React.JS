@@ -16,6 +16,14 @@ const AboutContentInfo = styled.div`
   display: flex;
   gap: 1rem;
   justify-content: space-between;
+  @media screen and (max-width: 1020px) {
+    margin-top: 4rem;
+    align-items: center;
+  }
+  @media screen and (max-width: 750px) {
+    margin-top: 0;
+    flex-direction: column;
+  }
 `;
 
 const AboutTextContent = styled.div`
@@ -23,6 +31,18 @@ const AboutTextContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  @media screen and (max-width: 750px) {
+    width: auto;
+    align-items: center;
+  }
+`;
+
+const AboutTitle = styled.div`
+  @media screen and (max-width: 750px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const About = () => {
@@ -38,6 +58,7 @@ const About = () => {
           title={data.title}
           subtitle={data.subtitle}
           text={data.text}
+          aboutUsMD
         />
         <AboutContentInfo>
           <ImageBig
@@ -45,14 +66,19 @@ const About = () => {
             alt="imagen de referencia a About"
             height="400px"
             width="350px"
+            aboutUs={true}
           />
           <AboutTextContent>
-            <div>
+            <AboutTitle>
               <Subtitle text="Sobre Nosotros" />
               <SubtitleSec text="HYDRA VR" arrow />
-            </div>
+            </AboutTitle>
             <TextInfo text="Nuestra filosofía se resume en 'Sumérgete en una Aventura Virtual Única'. Cada proyecto que emprendemos busca ir más allá de lo convencional, ofreciendo a los usuarios un viaje inmersivo y emocionante. Con un equipo apasionado, fusionamos la creatividad con la tecnología para llevar a nuestros clientes a lugares inexplorados y estimular sus sentidos de maneras innovadoras. Únete a nosotros en esta travesía, donde la realidad virtual se convierte en una puerta hacia nuevas fronteras y emociones. ¡Bienvenido a la evolución digital!" />
-            <ButtonPrimary margin={"1rem 0 0"} text="PONTE EN CONTACTO" padding={"1rem 1.5rem"} />
+            <ButtonPrimary
+              margin={"1rem 0 0"}
+              text="PONTE EN CONTACTO"
+              padding={"1rem 1.5rem"}
+            />
           </AboutTextContent>
         </AboutContentInfo>
       </AboutStyle>

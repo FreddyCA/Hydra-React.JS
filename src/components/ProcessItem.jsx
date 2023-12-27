@@ -10,6 +10,11 @@ const ProcessItemStyle = styled.div`
   gap: 1rem;
   width: 200px;
   height: 300px;
+  @media screen and (max-width: 1020px) {
+    height: 250px;
+    margin: 0 auto;
+    width: 150px;
+  }
 `;
 
 const ProcessItemNUM = styled.div`
@@ -24,6 +29,12 @@ const ProcessItemNUM = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 1020px) {
+    height: 100px;
+    width: 100px;
+    font-size: 2.5rem;
+    outline: 12px solid rgba(13, 13, 13, 0.4);
+  }
 `;
 
 const ProcessItemTitle = styled.h4`

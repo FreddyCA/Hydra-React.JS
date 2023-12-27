@@ -11,27 +11,33 @@ import GlobalStyle from "./style/reset";
 
 const App = () => {
   const [desktop, setDesktop] = useState(false);
+  const [headerItems, setHeaderItems] = useState(false);
+
+  const handleResize = () => {
+    const newWidth = window.innerWidth;
+
+    // Configurar el estado para la pantalla principal
+    setDesktop(newWidth > 1020);
+
+    // Configurar el estado para los elementos del encabezado
+    setHeaderItems(newWidth > 870);
+  };
 
   useEffect(() => {
-    const handleResize = () => {
-      const newWidth = window.innerWidth;
-      if (newWidth > 1020) {
-        setDesktop(true);
-      } else setDesktop(false);
-    };
-    handleResize()
+    handleResize(); // Llamada inicial
 
     window.addEventListener("resize", handleResize);
 
+    // Limpiar el event listener cuando el componente se desmonta
     return () => {
-      window.removeEventListener("resize", handleResize)
-    }
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
   return (
     <>
       <GlobalStyle />
       <NavBar desktop={desktop}></NavBar>
-      <Header></Header>
+      <Header headerItems={headerItems}></Header>
       <About></About>
       <Services></Services>
       <Tech></Tech>

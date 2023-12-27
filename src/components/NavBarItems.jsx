@@ -38,31 +38,41 @@ const NavBarItemStyle = styled.a`
 
   @media screen and (max-width: 1020px) {
     width: 100%;
-    background-color: #302c42;
+    background-color: #453f5e;
     text-align: center;
     border-top: 1px solid #c0b7e8;
     border-bottom: 1px solid #c0b7e8;
     padding: 1.5rem 1rem;
-    animation: ${ListAnimationStyle} 0.5s ease-in-out;
+    animation: ${ListAnimationStyle} 0.3s ease-in-out;
     animation-fill-mode: both;
 
     &:nth-child(1) {
       animation-delay: 0.01s;
+      z-index: 90;
     }
     &:nth-child(2) {
       animation-delay: 0.05s;
+      z-index: 89;
     }
     &:nth-child(3) {
       animation-delay: 0.1s;
+      z-index: 79;
+      
     }
     &:nth-child(4) {
       animation-delay: 0.15s;
+      z-index: 69;
+
     }
     &:nth-child(5) {
       animation-delay: 0.2s;
+      z-index: 59;
+
     }
     &:nth-child(6) {
       animation-delay: 0.25s;
+      z-index: 49;
+
     }
   }
 
@@ -103,8 +113,8 @@ const NavBarItems = ({ desktop }) => {
       <NavBarItemStyle href="#howTo">Cómo</NavBarItemStyle>
       {!desktop && (
         <>
-          <NavBarItemStyle href="#howTo">Contáctenos</NavBarItemStyle>
-          <NavBarItemStyle href="#howTo">Únete a Hydra</NavBarItemStyle>
+          <NavBarItemStyle href="#contact">Contáctenos</NavBarItemStyle>
+          <NavBarItemStyle href="#">Únete a Hydra</NavBarItemStyle>
         </>
       )}
     </NavBarItemsContentStyle>

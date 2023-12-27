@@ -12,6 +12,12 @@ const FormStyle = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  @media screen and (max-width: 1020px) {
+    padding: 3rem 2rem;
+  }
+  @media screen and (max-width: 750px) {
+    border-radius: 0;
+  }
 `;
 
 const Form = () => {

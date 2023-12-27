@@ -9,6 +9,7 @@ const BorderGradientStyle = styled.div`
     rgba(52, 48, 69, 0.3)
   );
   min-height: 2px;
+  
 `;
 
 const BorderGradientStyleColum = styled.span`
@@ -21,6 +22,9 @@ const BorderGradientStyleColum = styled.span`
   min-width: 2px;
   height: 180px;
   margin: auto 0;
+  @media screen and (max-width: 750px) {
+    display: none;
+  }
 `;
 
 const BorderGradient = ({ colum }) => {

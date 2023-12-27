@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 const TechItemStyle = styled.img`
   width: 150px;
   height: 150px;
+  margin: 0 auto;
 `;
 
 const TechItem = ({ img, alt }) => {

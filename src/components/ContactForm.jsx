@@ -8,13 +8,19 @@ const ContactFormStyle = styled.form`
   flex-direction: column;
   gap: 2rem;
   margin-top: 2rem;
+  @media screen and (max-width: 750px) {
+    gap: 1rem;
+  }
 `;
 
 const ContactFormContent = styled.div`
   width: 100%;
-  /* background-color: rebeccapurple; */
   display: flex;
   gap: 0.5rem;
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 `;
 
 const ContactFormInput = styled.input`
@@ -41,7 +47,7 @@ const ContactFormInputText = styled.textarea`
   color: var(--color--textPrimary);
   border: none;
   outline: 2px solid #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   &::placeholder {
     color: var(--color--textPrimary);
   }

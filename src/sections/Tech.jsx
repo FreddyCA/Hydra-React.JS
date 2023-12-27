@@ -9,13 +9,17 @@ import TechItem from "../components/TechItem";
 
 const TechStyle = styled.div`
   padding: 2rem 0;
+  @media screen and (max-width: 1020px) {
+    padding: 1rem 0;
+  }
 `;
 
 const TechItemsContent = styled.div`
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
   margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  
 `;
 
 const Tech = () => {

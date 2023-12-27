@@ -8,6 +8,9 @@ const TitleGradientStyle = styled.h1`
   background-clip: text;
   font-size: 2.5rem;
   font-weight: 700;
+  @media screen and (max-width: 1020px) {
+    font-size: 1.7rem;
+  }
 `;
 
 const TitleGradient = ({ text }) => {

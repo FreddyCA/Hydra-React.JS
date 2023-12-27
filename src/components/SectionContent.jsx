@@ -5,6 +5,14 @@ const SectionContentStyle = styled.div`
   margin: 1rem auto;
   padding: 2rem;
   width: 992px;
+  @media screen and (max-width: 1020px) {
+    width: auto;
+    margin: 0;
+    padding: 2rem 1rem;
+  }
+  @media screen and (max-width: 750px) {
+    padding: 1rem;
+  }
 `;
 
 const SectionContent = ({ children }) => {

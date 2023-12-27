@@ -16,6 +16,9 @@ const TechBannerStyle = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 0.65rem;
+  @media screen and (max-width: 750px) {
+    background-size: auto 150px;
+  }
 `;
 const TechBannerButton = styled.img`
   position: absolute;
@@ -25,6 +28,9 @@ const TechBannerButton = styled.img`
   border: 10px solid #433d60;
   background-color: #c0b7e8;
   bottom: -2rem;
+  @media screen and (max-width: 750px) {
+    bottom: 0rem;
+  }
 `;
 
 const TechBanner = () => {

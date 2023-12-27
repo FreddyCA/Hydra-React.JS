@@ -6,6 +6,12 @@ import ProcessItem from "../components/ProcessItem";
 
 const ProcessStyle = styled.div`
   padding: 2rem 0;
+  @media screen and (max-width: 1020px) {
+    padding: 1rem 0;
+  }
+  @media screen and (max-width: 750px) {
+    padding: 0;
+  }
 `;
 
 const ProcessItemsContent = styled.div`
@@ -18,6 +24,18 @@ const ProcessItemsContent = styled.div`
   justify-content: space-between;
   padding: 1.5rem;
   gap: 0.5rem;
+  @media screen and (max-width: 1020px) {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  @media screen and (max-width: 750px) {
+    padding: 0;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    background-image: none;
+    gap: 1rem;
+    width: 100%;
+  }
 `;
 
 const Process = () => {
@@ -50,6 +68,7 @@ const Process = () => {
           title="¿CÓMO CONSTRUIMOS?"
           subtitle="¿CON HIDRA VR?"
           text="Cada experiencia es meticulosamente creada mediante innovación digital y creatividad, llevando a los participantes a un viaje único. Desde la planificación hasta la ejecución, nos comprometemos a ofrecer experiencias excepcionales que trasciendan los límites de la realidad virtual, brindando un impacto duradero en la interacción y la inmersión del usuario."
+          servicesMD
         />
         <ProcessItemsContent>
           {data.map(({ id, title, num }) => (

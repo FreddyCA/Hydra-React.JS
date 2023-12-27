@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 
 import LogoNavBar from "../components/LogoNavBar";
@@ -20,7 +20,21 @@ const NavBarStyle = styled.div`
 
 const NavBarItemsMenu = styled.div`
   height: 100px;
-  width: 100%;
+  width: 250px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  padding: 0 2rem;
+  justify-content: end;
+
+  ${(props) =>
+    props.$bgMenu &&
+    css`
+      background-color: #453f5e;
+      z-index: 101;
+      border-bottom: 1px solid #c0b7e8;
+    `}
 `;
 const NavBarItemsIcon = styled.img`
   width: 30px;
@@ -29,25 +43,45 @@ const NavBarItemsIcon = styled.img`
   cursor: pointer;
 `;
 
-
 const NavBar = ({ desktop }) => {
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(true);
+
+  const toggleMenu = () => {
+    setMenu(!menu);
+  };
   return (
     <NavBarStyle>
       <LogoNavBar />
-      <div>
-        {!desktop && (
-          <NavBarItemsMenu>
-            {menu ? (
-              <NavBarItemsIcon src={menuIconOpen} alt="abrir menu" />
-            ) : (
-              <NavBarItemsIcon src={menuIconClose} alt="cerrar menu" />
-            )}
-          </NavBarItemsMenu>
-        )}
-        <NavBarItems desktop={desktop} />
-      </div>
-      {desktop && <NavBarLogin />}
+
+      {!desktop && (
+        <div>
+          {!desktop && (
+            <NavBarItemsMenu $bgMenu={!menu}>
+              {menu ? (
+                <NavBarItemsIcon
+                  src={menuIconOpen}
+                  alt="abrir menu"
+                  onClick={toggleMenu}
+                />
+              ) : (
+                <NavBarItemsIcon
+                  src={menuIconClose}
+                  alt="cerrar menu"
+                  onClick={toggleMenu}
+                />
+              )}
+            </NavBarItemsMenu>
+          )}
+          {!menu && <NavBarItems desktop={desktop} />}
+        </div>
+      )}
+
+      {desktop && (
+        <>
+          <NavBarItems desktop={desktop} />
+          <NavBarLogin />
+        </>
+      )}
     </NavBarStyle>
   );
 };

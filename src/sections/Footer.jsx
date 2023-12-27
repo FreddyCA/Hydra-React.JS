@@ -13,6 +13,11 @@ const FooterStyle = styled.div`
   align-items: start;
   margin-top: 2rem;
   padding: 2rem 4rem;
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
 `;
 
 const FooterBoxRigth = styled.div`
@@ -21,6 +26,9 @@ const FooterBoxRigth = styled.div`
   gap: 1rem;
   padding: 1rem;
   align-items: start;
+  @media screen and (max-width: 750px) {
+    align-items: center;
+  }
 `;
 
 const FooterDev = styled.div`
@@ -28,6 +36,10 @@ const FooterDev = styled.div`
   gap: 2rem;
   justify-content: space-evenly;
   padding: 2rem;
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Footer = () => {

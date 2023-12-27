@@ -7,6 +7,9 @@ const FooterItemsStyle = styled.div`
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
+  @media screen and (max-width: 750px) {
+    display: none;
+  }
 `;
 
 const FooterItems = ({ data }) => {

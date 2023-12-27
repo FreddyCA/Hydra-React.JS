@@ -6,6 +6,12 @@ const SubtitleSecStyle = styled.h3`
   color: var(--color--textPrimary);
   font-size: 1.875rem;
   font-weight: 300;
+  @media screen and (max-width: 1020px) {
+    font-size: 1.7rem;
+  }
+  @media screen and (max-width: 750px) {
+    font-size: 1.2rem;
+  }
 `;
 const SubtitleSecContent = styled.div`
   display: flex;
