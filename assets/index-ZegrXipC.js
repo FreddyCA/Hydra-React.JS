@@ -156,6 +156,12 @@ Error generating stack: `+o.message+`
     border: 2px solid #fff;
     color: var(--color--textPrimary);
   }
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent; 
+  }
 `,sn=({text:e,padding:t,margin:n})=>p.jsx(k1,{$padding:t,$margin:n,children:e});sn.propTypes={text:z.string.isRequired,padding:z.string,margin:z.string};const E1=P.div`
   padding: 1rem 0;
 `,_1=P.div`
