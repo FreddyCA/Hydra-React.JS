@@ -662,10 +662,7 @@ Error generating stack: `+o.message+`
     padding: 0;
   }
 `,Lm=P.div`
-  background-image: url(${_m});
-  background-repeat: no-repeat;
-  background-position: 0px 50px;
-  background-size: 100%;
+  background: url(${_m}) no-repeat 0px 50px / 100%;
   margin-top: 5rem;
   padding: 1.5rem;
   gap: 0.5rem;
