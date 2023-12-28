@@ -332,6 +332,9 @@ Error generating stack: `+o.message+`
   @media screen and (max-width: 1020px) {
     font-size: 1.7rem;
   }
+  @media screen and (max-width: 750px) {
+    font-size: 1.5rem;
+  }
 `,us=({text:e})=>p.jsx(X1,{children:e});us.propTypes={text:z.string.isRequired};const q1=P.div`
   display: flex;
   flex-wrap: wrap;
@@ -348,6 +351,9 @@ Error generating stack: `+o.message+`
   font-weight: 700;
   @media screen and (max-width: 1020px) {
     font-size: 1.7rem;
+  }
+  @media screen and (max-width: 750px) {
+    font-size: 1.5rem;
   }
 `,J1=()=>p.jsxs(q1,{children:[p.jsxs(Ma,{children:[p.jsx(us,{text:"Sumérgete"}),p.jsx(Oa,{children:"En Una"})]}),p.jsxs(Ma,{children:[p.jsx(Oa,{children:"Aventura Virtual"}),p.jsx(us,{text:"Única"})]})]}),b1="https://FreddyCA.github.io/Hydra-React.JS/assets/headerMask-l-3nl0xt.png",em=P.div`
   display: flex;
