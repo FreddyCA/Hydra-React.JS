@@ -24,10 +24,10 @@ const ProcessItemsContent = styled.div`
   justify-content: space-between;
   padding: 1.5rem;
   gap: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   @media screen and (max-width: 1020px) {
     margin-top: 3rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
   @media screen and (max-width: 750px) {
     padding: 0;
