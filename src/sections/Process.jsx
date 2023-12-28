@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import SectionContent from "../components/SectionContent";
 import InfoComplet from "../components/InfoComplet";
-import processBG from "../assets/svg/processBG.svg";
 import ProcessItem from "../components/ProcessItem";
 
 const ProcessStyle = styled.div`
@@ -15,13 +14,7 @@ const ProcessStyle = styled.div`
 `;
 
 const ProcessItemsContent = styled.div`
-  background-image: url(${processBG});
-  background-repeat: no-repeat;
-  background-position: 0px 50px;
-  background-size: 100%;
   margin-top: 5rem;
-  display: flex;
-  justify-content: space-between;
   padding: 1.5rem;
   gap: 0.5rem;
   display: grid;

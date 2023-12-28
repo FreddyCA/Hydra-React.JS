@@ -20,6 +20,12 @@ const ButtonPrimaryStyle = styled.button`
     border: 2px solid #fff;
     color: var(--color--textPrimary);
   }
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent; 
+  }
 `;
 
 const ButtonPrimary = ({ text, padding, margin }) => {
