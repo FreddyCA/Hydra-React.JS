@@ -667,8 +667,6 @@ Error generating stack: `+o.message+`
   background-position: 0px 50px;
   background-size: 100%;
   margin-top: 5rem;
-  display: flex;
-  justify-content: space-between;
   padding: 1.5rem;
   gap: 0.5rem;
   display: grid;
